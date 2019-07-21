@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/delete_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/garbage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/delete_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/delete_icon"
+                android:text="@string/Delete"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/imageViewCartItem"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignTop="@id/textViewTitle"
+                android:layout_centerVertical="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/man" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:textStyle="bold"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imageViewCartItem"
+                android:gravity="left|center_vertical"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/textViewTitle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/like" />
+
+            <TextView
+                android:id="@+id/textViewCurrentPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_alignStart="@id/textViewTitle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left|center_vertical"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewOrignalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_alignBaseline="@id/textViewCurrentPrice"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/textViewCurrentPrice"
+                android:background="@drawable/striketrough"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_alignBaseline="@id/textViewCurrentPrice"
+                android:layout_toRightOf="@id/textViewOrignalPrice"
+                android:background="@drawable/tag_style"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textViewDeliveryCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCurrentPrice"
+                android:layout_alignStart="@id/textViewCurrentPrice"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center_vertical"
+                android:paddingStart="5dp"
+                android:text="TextView"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDeliveryCharge"
+                android:layout_alignStart="@id/textViewDeliveryCharge"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/Qty"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewMinus"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@id/textView14"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/textView14"
+                android:background="@color/windowBackground"
+                android:padding="3dp"
+                app:srcCompat="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/textViewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textView18"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/imageViewMinus"
+                android:gravity="bottom"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@id/textView14"
+                android:layout_toRightOf="@id/textViewCount"
+                android:background="@color/colorAccent"
+                android:padding="2dp"
+                app:srcCompat="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textView14"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_style_small"
+                android:backgroundTint="@color/red"
+                android:paddingStart="15dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="2dp"
+                android:text="@string/Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

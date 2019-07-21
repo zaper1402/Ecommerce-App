@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewOffersItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_socialmedia"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewOffers"
+                    android:layout_width="160dp"
+                    android:layout_height="128dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/casual" />
+
+                <TextView
+                    android:id="@+id/textViewOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/green"
+                    android:paddingStart="1dp"
+                    android:paddingEnd="1dp"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textViewCurrentPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameLayout"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewOrignalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameLayout"
+                android:layout_alignBaseline="@id/textViewCurrentPrice"
+                android:layout_toRightOf="@id/textViewCurrentPrice"
+                android:background="@drawable/striketrough"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/textViewItemsSold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCurrentPrice"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp"
+                android:text="TextView"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewOrdered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewItemsSold"
+                android:layout_alignStart="@id/textViewItemsSold"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="2dp"
+                android:text="TextView"
+                android:textColor="@color/purple" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

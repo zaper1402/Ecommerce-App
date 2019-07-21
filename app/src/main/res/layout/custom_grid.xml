@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:com.github.siyamed="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <!--xmlns:app="http://schemas.android.com/tools"-->
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+    android:id="@+id/imageView_icon"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_centerInParent="true"
+        android:elevation="5dp"
+        android:src="@drawable/electronic"
+        android:background="@drawable/imagebackground"
+        com.github.siyamed:siBorderColor="@color/white"
+        com.github.siyamed:siBorderWidth="3dp"/>
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_icon"
+        android:layout_centerHorizontal="true"
+        android:text="Mobile"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+</RelativeLayout>

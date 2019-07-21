@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">E-adda</string>
+    <string name="Skip">SKIP</string>
+    <string name="SignIn">SignIn</string>
+    <string name="SignUp">SignUp</string>
+    <string name="now"> now</string>
+    <string name="alreadyAccount">Already have an account? </string>
+    <string name="continueWith">-continue with-</string>
+    <string name="CreateAccount">Create Account</string>
+    <string name="EmailAddress">Email Address*</string>
+    <string name="Password">Password*</string>
+    <string name="fullName">Full Name</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="SignInMsg">Signin to get a customized \n  experience &amp; quick checkout  </string>
+    <string name="SignUpMsg">Signup to get a customized \n exprerience &amp; quick checkout</string>
+    <string name="Trending">Trending</string>
+    <string name="Category">Category</string>
+    <string name="Categories">Categories</string>
+    <string name="Offers">Offers</string>
+    <string name="ViewAll">View All</string>
+    <string name="Home">Home</string>
+    <string name="Cart">My Cart</string>
+    <string name="Account">Account</string>
+    <string name="facebook">Facebook</string>
+    <string name="Google">Google</string>
+    <string name="PayableAmount">Payable Amount</string>
+    <string name="TotalAmount"></string>
+    <string name="MakePayment">Make Payment</string>
+    <string name="Qty">Qty</string>
+    <string name="Delete">Delete</string>
+</resources>
